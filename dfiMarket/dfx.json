@@ -1,0 +1,16 @@
+{
+	"canisters": {
+		"market": {
+			"main": "src/market.mo",
+			"type": "motoko"
+		},
+		"storage": {
+			"main": "src/storage.mo",
+			"type": "motoko"
+		},
+		"icpunks": {
+			"main": "wrappers/icpunks.mo",
+			"type": "motoko"
+		}
+	}
+}

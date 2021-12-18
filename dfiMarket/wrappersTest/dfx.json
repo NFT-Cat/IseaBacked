@@ -1,0 +1,17 @@
+{
+	"canisters": {
+		"icpunksWrapper": {
+			"main": "./icpunks.mo",
+			"type": "motoko"
+		},
+		"icpunks": {
+			"main": "../../ICPunks/service/motoko/icpunks.mo",
+			"type": "motoko"
+		},
+
+		"icpunks_storage": {
+			"main": "../../ICPunks/service/motoko/storage.mo",
+			"type": "motoko"
+		}
+	}
+}

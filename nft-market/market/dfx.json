@@ -1,0 +1,40 @@
+{
+  "canisters": {
+    "1read": {
+      "type": "custom",
+      "candid": "../read/read.did",
+      "wasm": "../read/read_opt.wasm",
+      "source": ["dist"]  
+    },
+    "2market": {
+      "main": "src/main.mo",
+      "type": "motoko"
+    },
+    "3ledger": {
+      "type": "custom",
+      "candid": "../ledger/ledger.did",
+      "wasm": "../ledger/ledger-canister-del-whitelist-op.wasm",
+      "source": ["dist"]      
+    },
+    "4erc721": {
+      "main": "../nft-token/src/token_ERC721/main.mo",
+      "type": "motoko"
+    },
+    "5erc20": {
+      "main": "../dfinance-tech/ic-token/motoko/src/token.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}

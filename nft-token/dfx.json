@@ -1,0 +1,24 @@
+{
+  "canisters": {
+    "token_ERC721": {
+      "main": "src/token_ERC721/main.mo",
+      "type": "motoko"
+    },
+    "token_ERC20": {
+      "main": "./ic-token/motoko/erc20-simple-storage/src/token.mo",
+      "type": "motoko"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
